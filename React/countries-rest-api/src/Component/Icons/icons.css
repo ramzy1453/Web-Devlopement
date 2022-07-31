@@ -1,0 +1,136 @@
+.conter-wait{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 140px 0;
+}
+
+.conter-wait > .spin{
+    animation: rotation 3s infinite linear;
+    color: white;
+    font-size: 5em;
+}
+
+.conter-wait > .text-loading-conter{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.conter-wait > .text-loading-conter > .text{
+    font-size: 3.8em;
+    margin: 0 30px 0 0;
+    font-style: italic;
+    animation: curve-text 1.5s infinite ease;
+}
+
+/**********START DOT ******************/
+.dot-falling {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    box-shadow: 9999px 0 0 0 white;
+    animation: dotFalling 1s infinite linear;
+    animation-delay: .1s;
+    margin-top: 13px;
+  }
+  
+  .dot-falling::before, .dot-falling::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot-falling::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    animation: dotFallingBefore 1s infinite linear;
+    animation-delay: 0s;
+  }
+  
+  .dot-falling::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    animation: dotFallingAfter 1s infinite linear;
+    animation-delay: .2s;
+  }
+  
+  @keyframes dotFalling {
+    0% {
+      box-shadow: 9999px -15px 0 0 rgba(152, 128, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+      box-shadow: 9999px 0 0 0 white;
+    }
+    100% {
+      box-shadow: 9999px 15px 0 0 rgba(152, 128, 255, 0);
+    }
+  }
+  
+  @keyframes dotFallingBefore {
+    0% {
+      box-shadow: 9984px -15px 0 0 rgba(152, 128, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+      box-shadow: 9984px 0 0 0 white;
+    }
+    100% {
+      box-shadow: 9984px 15px 0 0 rgba(152, 128, 255, 0);
+    }
+  }
+  
+  @keyframes dotFallingAfter {
+    0% {
+      box-shadow: 10014px -15px 0 0 rgba(152, 128, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+      box-shadow: 10014px 0 0 0 white;
+    }
+    100% {
+      box-shadow: 10014px 15px 0 0 rgba(152, 128, 255, 0);
+    }
+  }
+  
+/**********END DOT ******************/
+
+/***************animation*****************/
+@keyframes rotation {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes curve-text {
+    0%{
+        transform: scale(1.03);
+    }
+    50%{
+        transform: scale(0.97);
+    }
+    100%{
+        transform: scale(1.03);
+    }
+}

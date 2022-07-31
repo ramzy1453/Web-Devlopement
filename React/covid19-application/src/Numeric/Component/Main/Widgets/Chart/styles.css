@@ -1,0 +1,11 @@
+#conter-total-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #081620;
+    padding-bottom: 50px;
+}
+
+.chart{
+    width: 60%;
+}

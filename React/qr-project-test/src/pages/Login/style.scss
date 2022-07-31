@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;700&display=swap');
+.login {
+    background-color: #D2D0DD;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    .login-main {
+        display: flex;
+        background-color: white;
+        .first {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .title {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .welcome {
+                font-size: 28px;
+                align-self: flex-start;
+                margin-bottom: 10px
+            }
+            .details {
+                font-size: 20px;
+                align-self: flex-start;
+                color: gray;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+            .field-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 5px 0;
+            }
+            .forgot-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px 0;
+            }
+            .no-acc {
+                margin-top: 10px;
+            }
+            .copyright {
+                align-self: flex-start;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        .second {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .login-main {
+        .first {
+            padding: 20px 30px;
+            .title {
+                align-self: flex-start;
+            }
+        }
+        .second {
+            background-color: #F3F4F8;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .login-main {
+        flex-direction: column-reverse;
+        .first {
+            padding: 20px 30px;
+        }
+        .second {
+            padding: 10px;
+            background-color: white;
+            img {
+                width: 170px;
+            }
+        }
+    }
+    .title {
+        align-self: center;
+    }
+}

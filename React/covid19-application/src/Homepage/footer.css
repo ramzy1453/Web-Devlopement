@@ -1,0 +1,43 @@
+footer{
+    background-color: #072942;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 90px;
+    align-items: center;
+}
+
+footer .first{
+
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+footer .conter-social{
+    margin-right: 15px;
+
+}
+
+footer .conter-social a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    margin: 0 10px;
+    transition: .2s ease all;
+}
+
+#fb:hover{
+    color: #1877F2;
+    filter: drop-shadow(0 0 5px #1877F2);
+}
+#yt:hover{
+    color: #CD201F;
+    filter: drop-shadow(0 0 5px #CD201F);
+}
+#gt:hover{
+    color: orange;
+    filter: drop-shadow(0 0 5px orange);
+}
+#ig:hover{
+    color: #E4405F;
+    filter: drop-shadow(0 0 5px #E4405F);
+}

@@ -1,0 +1,32 @@
+.conter-search{
+    display: flex;
+    background-color: hsl(209, 23%, 22%);
+    margin: 20px;
+
+
+}
+.conter-search > input{
+    width: 350px;
+    border: none;
+    outline: none;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    font-size: 1.1em;
+    padding-left: 10px;
+
+}
+.conter-search > .icon{
+    font-size: 1.4em;
+    cursor: pointer;
+    color: white;
+    padding: 12px;
+}
+.react-select{
+    margin: 20px;
+}
+
+@media screen and (max-width : 500px){
+    .conter-search > input{
+        width: 100%;
+    }    
+}

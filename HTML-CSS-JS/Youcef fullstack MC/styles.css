@@ -1,0 +1,59 @@
+/***************************main***************************/
+body{
+    background-color: #0fcf90;
+}
+h1{
+    color : #b9105e
+}
+h2{
+    color: orange;
+}
+ul > li{
+    color : #0000ff
+}
+.hello{
+    background-color: white;
+}
+p{
+    background-color: yellow;
+}
+input{
+    border: 3px red solid;
+}
+#special{
+    border: 2px rgb(0,0,255) solid;
+}
+div > p{
+    font-size: 25px;
+}
+input[type="text"]{
+    background-color: gray;
+}
+div:nth-child(3) > p{
+    background-color: pink;
+}
+div:nth-child(3) > p:nth-child(2){
+    border : 5px white border;
+}
+div:nth-child(3) > em{
+    color: white;
+    font-size: 20px;
+}
+
+/***************************bonus***************************/
+
+input[type="checkbox"]:checked{
+    margin-left: 50px;
+}
+label{
+    text-transform: uppercase;
+}
+#special::first-letter{
+    color: green;
+}
+h1:hover{
+    color: blue;
+}
+a:visited{
+    color: gray;
+}

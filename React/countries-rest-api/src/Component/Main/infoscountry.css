@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+.conter-info-country{
+    width: 900px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: hsl(207, 26%, 17%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0 0 5px #00000070;
+    font-family: 'Nunito Sans', sans-serif;
+    user-select: text;
+}
+.conter-info-country .second-conter > .image{
+    width : 337.5px;
+    height : 225px;
+}
+
+.conter-info-country > .conter-buttons > .return{
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: hsl(209, 23%, 22%);
+    cursor: pointer;
+    box-shadow: 0 0 5px #00000070;
+}
+
+.conter-info-country > .conter-buttons > .return:hover{
+    background-color: hsl(207, 25%, 28%);
+}
+.conter-info-country > .conter-buttons > .return:active{
+    background-color: hsl(207, 22%, 18%);
+}
+
+.conter-buttons > .return > .icon{
+    margin-right: 10px;
+}
+
+.conter-info-country > .second-conter{
+    display: flex;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.second-conter > img{
+    margin-right: 80px;
+    margin-left: 20px;
+    box-shadow: 0 0 40px #00000038;
+    cursor: pointer;
+
+}
+.second-conter > .vertical-conter{
+    flex : 1;
+}
+
+.vertical-conter > .title{
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+
+
+}
+.vertical-conter > .conter-borders{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.conter-borders > .text-border{
+    margin-right: 5px;
+}
+
+.conter-borders > .border{
+    padding: 5px 10px;
+    margin: 4px;
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: 0 0 5px #00000070;
+    cursor: pointer;
+}
+.conter-borders > .border:hover{
+    background-color: hsl(207, 22%, 29%);
+}
+
+.vertical-conter > .second-vertical-conter{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.second-vertical-conter > .class{
+    flex : 1;
+    
+}
+.second-vertical-conter > .class > .element {
+    margin: 4px 0 0 0;   
+}
+.second-vertical-conter > .class > .element > span{
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width : 910px) {
+    .second-conter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .conter-info-country .second-conter > .image{
+        width: 400px;
+        height: 260px;
+        margin : 0 0 10px 0;
+    }
+    .conter-info-country{
+        overflow-y: scroll;
+        font-size: 0.9em;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+
+    }
+    .second-conter > .vertical-conter{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .vertical-conter > .title{
+        text-align: center;
+    }
+    .second-vertical-conter {
+        margin: 0 20px;
+    }
+    .class:nth-child(1){
+        margin-right: 10px;
+    }
+    .class:nth-child(2){
+        margin-left: 10px;
+    }
+    .vertical-conter > .conter-borders{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .conter-borders > .border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width : 420px) {
+    .conter-info-country .second-conter > .image{
+        width: 250px;
+        height: 163px;
+    }
+    .conter-info-country > .conter-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conter-buttons > .return{
+        margin: 10px;
+    }
+}

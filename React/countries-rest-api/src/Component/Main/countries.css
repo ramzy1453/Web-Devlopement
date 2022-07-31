@@ -1,0 +1,62 @@
+.countries-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one-country-container{
+    width: 220px;
+    height: 300px;
+    margin: 20px 44px;
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: 0 3px 7px -2px black;
+    display: flex;
+    flex-direction: column;
+    transition: .3s ease all;
+
+}
+.one-country-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px 5px hsl(209, 77%, 15%);
+    margin-top: -1px;
+}
+
+.one-country-container > .conter-info{
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex : 1
+
+}
+.conter-info > .conter-name{
+    display: flex;
+    justify-content: space-between;
+}
+.conter-info > .conter-name > .name{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0 5px 5px;
+}
+.conter-info > .second-conter-info{
+
+    
+}
+
+.conter-info > .second-conter-info > div > span{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.conter-info > .second-conter-info > div{
+    font-size: 0.8em;
+    margin-bottom: 2px;
+    margin-left: 5px;
+
+}
+
+/*************************************/
+.empty-data{
+    font-size: 2em;
+    color: white;
+}

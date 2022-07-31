@@ -1,0 +1,39 @@
+#conter-box{
+    background-color: #081620;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+}
+
+#conter-box .title{
+    border: 1px solid solid;
+    font-size: 3em;
+    position: relative;
+    animation: anime_title .2s ease forwards ;
+}
+@keyframes anime_title{
+    from{
+        left: -50px;
+    }
+    to{
+        left: 0;
+    }
+}
+
+#conter-box .conter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#conter-box .conter .label{
+    font-size: 2.1em;
+}
+#conter-box .conter .case{
+    font-size: 2.3em;
+}

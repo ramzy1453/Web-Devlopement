@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+.conter-homepage{
+    background-color: #081620;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conter-homepage .logo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+.conter-homepage .logo .icon{
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+.conter-homepage .title{
+    text-align: center;
+    font-size: 3em;
+    width: 80%;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+
+.conter-homepage .conter-choice{
+    display: flex;
+    margin: 100px 0;
+}
+
+.conter-homepage .conter-choice .choice{
+    border: 5px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 350px;
+    height: 438px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px;
+    transition: .5s ease all;
+}
+.conter-homepage .conter-choice .choice .icon{
+    color: white;
+    font-size: 10em;
+}
+.conter-homepage .conter-choice .choice .name{
+    font-size: 3em;
+}
+
+.conter-homepage .title{
+    text-align: center;
+}
+
+
+.conter-homepage .conter-choice .choice:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 12px;
+    margin-top: -10px;
+}

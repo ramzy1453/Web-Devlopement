@@ -1,0 +1,28 @@
+.conter-main{
+    margin : 20px 50px
+
+}
+
+.conter-main > .conter-categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.conter-categories > .conter-select{
+    display: flex;
+}
+
+@media screen and (max-width : 1000px){
+    .conter-main > .conter-categories{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .conter-categories > .conter-select{
+        flex-direction: column;
+    }
+    
+}

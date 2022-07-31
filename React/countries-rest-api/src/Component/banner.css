@@ -1,0 +1,70 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 -2px 8px black;
+    transition: .5s ease all;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+
+.header > .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.header > .light-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.rectangle{
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    box-shadow: 
+    inset 0 8px 60px rgb(0,0,0,.1),
+    inset 0 8px 8px rgb(0,0,0,.1),
+    inset 0 -4px 4px rgb(0,0,0,.1);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease all 0.5s;
+    background-color: #222;
+
+}
+
+.circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 8px 30px rgba(0,0,0,.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255,255,255,.2);
+    transform: scale(.70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease all 0.5s;
+    top: 0;
+    left: 0;
+    background : linear-gradient(to bottom, #444, #222);
+
+}
+.circle-light{
+    background : linear-gradient(to bottom, rgb(219, 216, 216), rgb(230, 225, 225));
+
+}
+
+.right{
+    left : 60px
+}

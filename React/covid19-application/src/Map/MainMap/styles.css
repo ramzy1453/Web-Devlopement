@@ -1,0 +1,50 @@
+.conter-map{
+
+}
+
+.conter-map .country{
+    fill: #ff2828;
+    stroke: black;
+    stroke-width: 0.5px;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.conter-box{
+    background-color: #081620;
+    border: 5px white solid;
+    border-radius: 10px;
+    padding : 10px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    animation: op .2s ease forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conter-box img{
+    height: 120px;
+}
+.conter-box .name{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+.conter-box .conter-info{
+}
+.conter-box .conter-info .element{
+    text-align: center;
+    font-size: 1.1em;
+}
+@keyframes op{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

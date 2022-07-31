@@ -1,0 +1,52 @@
+.conter-main{
+
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.conter-main .covid-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+    overflow : hidden;
+
+}
+.conter-main .covid-bg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+.conter-main .covid-bg .info{
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.conter-button{
+    background-color: #081620;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.conter-button a{
+    background-color: #ac2121;
+    padding: 10px 30px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+.conter-button a:hover{
+    background-color: #d12929;
+}
+.conter-button a:active{
+    background-color: #861616;
+}

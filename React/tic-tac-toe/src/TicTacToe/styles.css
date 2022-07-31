@@ -1,0 +1,55 @@
+.ttt{
+    background: linear-gradient(#253b7e , rgba(37, 59, 126 , .9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.title{
+    color: black;
+    font-size: 3em;
+}
+.ttt .message{
+    font-size: 2em;
+    color: white;
+}
+/*******TABLE******/
+.ttt .table{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(100px , 1fr));
+    width: 300px;
+}
+.ttt .table .square{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+}
+.button{
+    background-color:  #ac2020;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal{
+    width: 400px;
+    height: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}

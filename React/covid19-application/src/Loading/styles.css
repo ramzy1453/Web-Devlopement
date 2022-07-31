@@ -1,0 +1,28 @@
+.conter-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #081620;
+    color: white;
+    height: 100vh;
+}
+
+.conter-total .icon{
+    font-size: 10em;
+    animation: rotate ease 3s infinite;
+}
+
+.conter-total .text{
+    font-size: 4em;
+    margin-top: 10px;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
