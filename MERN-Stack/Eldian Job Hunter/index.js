@@ -15,8 +15,11 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(cors());
-app.use(morgan("dev"));
-
+if (!process.env.NODE_ENV === "production") {
+  app.use(morgan("dev"));
+} else {
+  app.use(express.static("client/build"));
+}
 // Routes
 app.get("/api", (req, res) => {
   res.json({ message: "Welcome to Eldian Job Hunter API" });
